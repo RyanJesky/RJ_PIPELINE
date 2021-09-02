@@ -1,0 +1,3 @@
+resourceGroupName = "MyFirstDeployment"
+
+location = "eastus"
