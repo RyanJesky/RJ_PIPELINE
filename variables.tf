@@ -1,5 +1,5 @@
 variable "resourceGroupName" {
-    default = "MyFirstDeployment"
+    default = "RESOURCE GROUP NAME"
     type = string
     description = "Resource group name for the storage account to reside in"
 }
