@@ -1,12 +1,12 @@
 terraform{
     backend "azurerm"{
-        resource_group_name = "dev2"
+        resource_group_name = "RESOURCE GROUP"
 
-        storage_account_name = "rjteststorageaccount123"
+        storage_account_name = "STORAGE ACCOUNT"
 
-        container_name = "rjtestcontainer"
+        container_name = "CONTAINER"
 
-        access_key = "tnZBWmHMIts73t095CrwsrOkGawXRUT4xAwNZsvlY5fABgCj7pPIUIDgLPkPp2nHeNEmY8Lb2Ikh7UndzeY8jQ=="
+        access_key = "ACCESS KEY"
     }
 }
 
@@ -20,7 +20,7 @@ provider "azurerm" {
 
 resource "azurerm_storage_account" "TechTargetSG" {
 
-    name = "rjteststorageaccount1234"
+    name = "STORAGE ACCOUNT NAME"
     resource_group_name = var.resourceGroupName
     location = var.location
     account_tier = "Standard"
