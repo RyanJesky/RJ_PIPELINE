@@ -15,10 +15,10 @@ steps:
      provider: 'azurerm'
      command: 'init'
      workingDirectory: $(System.DefaultWorkingDirectory)
-     backendServiceArm: 'RJ_AzureRM_service_connection'
-     backendAzureRmResourceGroupName: 'MyFirstDeployment'
-     backendAzureRmStorageAccountName: 'rjteststorageaccount123'
-     backendAzureRmContainerName: 'rjtestcontainer'
+     backendServiceArm: 'SERVICE CONNECTION NAME'
+     backendAzureRmResourceGroupName: 'RESOURCE GROUP NAME'
+     backendAzureRmStorageAccountName: 'STORAGE ACCOUNT NAME'
+     backendAzureRmContainerName: 'CONTAINER NAME'
      backendAzureRmKey: 'tf/terraform.tfstate'
 
 - task: TerraformTaskV2@2 
@@ -26,4 +26,4 @@ steps:
      provider: 'azurerm'
      command: 'apply'
      workingDirectory: $(System.DefaultWorkingDirectory)
-     environmentServiceNameAzureRM: 'RJ_AzureRM_service_connection'
+     environmentServiceNameAzureRM: 'SERVICE CONNECTION NAME'
